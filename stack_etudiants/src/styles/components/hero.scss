@@ -1,0 +1,44 @@
+.hero{
+    padding: var(--spacing-xl) 0;
+    .wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    p{
+        font-weight: 400;
+        color: var(--Color-type-pale);
+    }
+
+    
+}
+
+
+
+h1{
+    letter-spacing: -2px;
+    line-height: 72px;
+}
+
+.boutons{
+    display: flex;
+    gap: 56px;
+    margin: 5px;
+}
+
+.button-play{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-play span{
+    background-image: linear-gradient(#FFC700, #FF782D);
+    border-radius: 100%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+}

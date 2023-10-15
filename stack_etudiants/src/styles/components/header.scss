@@ -1,0 +1,71 @@
+header{
+    padding: 24px;
+    font-size: var(--font-size-h6);
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 45px;
+    }
+
+}
+
+.header_nav{
+    font-weight: 500;
+    color: var(--color-typo-tresPale);
+
+    a:hover{
+        font-weight: 700;
+        color: var(--color-enutre-foncee);
+    }
+}
+
+.header_options{
+    font-weight: 700;
+    color: var(--color-neutre-foncee);
+
+    ul{
+        display: flex;
+        align-items: center;
+    }
+
+    .button{
+        padding: 8px; 
+        padding-left: 20px;  
+        padding-right: 20px;  
+        border-radius: 7px;
+    }
+
+}
+
+.search-bar {
+    display: inline-block;
+    background-color: var(--color-white);
+    border-radius: 4px;
+    //overflow: hidden;
+    //margin: 30px;
+
+    .search-input {
+        //border: none;
+        padding: 10px;
+        background-color: transparent;
+        color: var(--color-black);
+        width: 200px; // Adjust the width as needed
+        font-size: 16px;
+
+        background-image: url("magnifying-glass-solid.svg");
+        background-repeat: no-repeat;
+        background-position: 10px center; // Adjust the positioning as needed
+
+
+        &::placeholder {
+            color: var(--color-black);
+        }
+    }
+}
