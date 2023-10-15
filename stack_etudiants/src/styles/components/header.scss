@@ -1,6 +1,14 @@
 header{
+    /*
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+*/
     padding: 24px;
+    padding-left: 0px;
+
     font-size: var(--font-size-h6);
+    font-family: var(--font-secondary);
 
     .wrapper{
         display: flex;
@@ -36,36 +44,41 @@ header{
     }
 
     .button{
-        padding: 8px; 
+        padding: 5px; 
         padding-left: 20px;  
         padding-right: 20px;  
-        border-radius: 7px;
+        border-radius: 5px;
+        box-shadow: none;
+        background-color: var(--color-grey);
+        font-weight:100;
+    }
+
+    .connection{
+        font-weight: 100;
     }
 
 }
 
 .search-bar {
-    display: inline-block;
     background-color: var(--color-white);
     border-radius: 4px;
-    //overflow: hidden;
-    //margin: 30px;
+    margin-left: 30px;
 
     .search-input {
         //border: none;
         padding: 10px;
         background-color: transparent;
         color: var(--color-black);
-        width: 200px; // Adjust the width as needed
+        width: 300px; // Adjust the width as needed
         font-size: 16px;
+        padding: 12px 20px 12px 40px;
 
-        background-image: url("magnifying-glass-solid.svg");
+        //image
+        background-image: url("../assets/icons/magnifying-glass-solid.svg");
         background-repeat: no-repeat;
-        background-position: 10px center; // Adjust the positioning as needed
+        background-position: 5px;
+        background-size: 7%;
+        
 
-
-        &::placeholder {
-            color: var(--color-black);
-        }
     }
 }
