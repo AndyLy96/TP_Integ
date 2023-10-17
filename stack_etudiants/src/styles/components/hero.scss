@@ -2,35 +2,64 @@
     .wrapper{
         display: grid;
         grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'h2 h2'
+        'content content1';
     }
 
     p{
         font-weight: 400;
         color: var(--Color-type-pale);
+        padding: 0px;
+
     }
     
 }
 
+/*
+ <h2>1 000 000$</h2>
+                            <p class="info">sur 2 000 000$</p>
+                            <br>
+                            <p class="number">50</p>
+                            <p class="info">contributeurs</p>
+                            <br>
+                            <p class="number">30</p>
+                            <p class="info">jours restant</p>
+*/
+
+.hero_media{
+    grid-area: content;
+
+}
 
 
 .hero_content{
     padding-left: 24px;
-
+    font-style: var(--font-secondary);
+    grid-area: content1;
     .prog{
         width: 200px;
     }
     
 }
 
+.info{
+   font-size: var(--font-size-h5);
+   padding: 0px;
+}
 
+.number{
+    font-size: var(--font-size-h3);
+    padding: 0px;
 
+ }
 
 h2{
-    padding-left: 24px;
+    grid-area: h2;
     font-weight: 500;
     letter-spacing: -2px;
     line-height: 72px;
-    padding-bottom: 24px;
 }
 
 .boutons{
