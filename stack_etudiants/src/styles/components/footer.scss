@@ -1,13 +1,102 @@
 footer{
     padding-top: 50px;
-    border: 1px black;
-    outline-style: solid;
+   
     position: relative; 
-    bottom: 0; 
+
+    text-align: center;
+    font-style: var(-font-secondary);
 
     .wrapper{
         display: grid;
         grid-template-columns:  repeat(3, 1fr);;
-        grid-template-rows: auto;     
+        grid-template-rows: auto; 
+        /*   
+        grid-template-areas: 
+        'div1 div2 div3'
+        'content content content'
+        'copyright copyright copyright'; 
+        */
+    }
+
+
+}
+
+.compInfo{
+
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);;
+    grid-template-rows: auto; 
+
+    .companyList{
+        //grid-area: div2;
+
+        .company{
+            padding-left: 12%;
+            text-align: left;
+        }
+        
+        ul{
+            padding-left: 12%;
+        
+            text-align: left;
+            list-style: none;
+            justify-content:center;
+        }
+    }
+
+    .productList{
+        //grid-area: div3;
+
+        .product{
+            padding-right: 12%;
+            text-align: right;
+        }
+
+        ul{
+            padding-right: 12%;
+        
+            text-align: right;
+            list-style: none;
+            justify-content:center;
+        }
+    }
+}
+
+
+
+
+
+li{
+    font-size: var(--font-size-h5);
+    padding-bottom: 10px;
+}
+
+
+
+.logoList{
+    //grid-area: div1;
+    .ayaneo{
+        padding-bottom: 20px;
+    }
+    
+    .logos{
+        padding-left: 25%;
+    }
+    
+    .socialLogos{
+        margin-left: 11px;
+        display: inline-block;
+    }
+}
+
+.legalList{
+    ul{
+        padding:0; 
+        margin:0;
+        display: flex;
+        list-style: none;
+        justify-content:space-between;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 }
