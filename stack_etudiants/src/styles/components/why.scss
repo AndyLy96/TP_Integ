@@ -1,6 +1,6 @@
 .why{
     
-    .wrapper1{
+    .wrapperBlack{
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
@@ -9,11 +9,26 @@
         'blackC matteC';
     }
 
+    .wrapperWhite{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'h2 h2'
+        'blackC matteC';
+    }
+
+
     p{
         font-weight: 400;
         color: var(--Color-type-pale);
         padding: 0px;
 
+    }
+
+
+    .goRight{
+        text-align: right;
     }
 
 
@@ -24,9 +39,19 @@
     .blackC{
         grid-area: blackC;
     }
+    
+    .platinumC{
+        padding-top: 15%;
+        margin: 24px;
+        font-size: var(--font-size-h4);
+    }
 
     .matteC{
+        padding-top: 15%;
+        margin: 24px;
         grid-area: matteC;
+        font-size: var(--font-size-h4);
+
     }
 
 }

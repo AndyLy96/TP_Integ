@@ -1,52 +1,77 @@
 .testimonies{
-    padding: var(--spacing-xl) 0;
-    background-color: var(--color-fond-pale);
-
-    .suptitle{
-        box-shadow: 6px 9px 15px 5px rgba(0,13,81,0.20);
-    }
-
-    .testimonies_header{
-        display: flex;
-        justify-content: space-between;
-        padding:0;
-    }
-
-    .cards{
-        margin-top:  50px; ;
-
+    .wrapper{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 35px;
+        grid-template-columns:  repeat(2, 1fr);;
+        grid-template-rows: auto;
+      
+        height: 1360px;
+    }
+}
+
+.card{
+    border: 1px black;
+    outline-style: solid;
+    margin: 10px;
+    margin-bottom: 20px;
+
+
+    img{
+        margin-top: 30px;
+        margin-left: 50px;
+        height: 240px;
+        margin-bottom: 15px;
     }
 
-
-    .card{
-        background-color: var(--color-white);
-
-        padding: var(--spacing-md);
-
+    .description{
+        font-size: var(--font-size-word);
+        font-weight: bold;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        margin-left: 15%;
+        margin-right: 18%;
+    }
 
-        color: var(--Color-typo-pal);
-
-        h3{
-            padding-top: 30px;
+    .cla{
+        .Dtitle{
+            font-size:  var(--font-size-word);
+            display: flex;
+            justify-content: center;
+            padding-bottom: 0px;
         }
     }
 
-
-    p{
-        font-weight: normal ;
-        color: var(--Color-typo-fonce);
-        margin-top: 0;
-        margin-bottom: 10px;
+    .desc{
+        display: flex;
+        justify-content: center;
+        padding-top: 0px;
+        padding-left: 15%;
+        padding-right: 18%;
     }
 
 
-    ul{
+    .bold{
+        font-size: var(--font-size-word);
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15%;
+        margin-right: 18%;
+        white-space: initial;
+    }
+
+
+    
+    .contribue{
+        font-size: var(--font-size-h4);
+        background-color: var(--color-black);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 45px;
+        margin-right: 45px;
         margin-bottom: 10px;
+        font-size: var(--font-size-h4);
+        color: var(--color-white);
+        display: flex;
+        justify-content: center;
     }
 }
