@@ -1,0 +1,4 @@
+le progress bar n,est pas le même que celui de la maquette sur figma, car je n'ai pas trouver de 
+manière sauf de mettre une image de refaire la bar, donc j'ai utilisé le <progress> de html.
+
+le footer il y a une différence sur le nombre de logos, car je trouvais que 5 logos était plus attirant que 6.
